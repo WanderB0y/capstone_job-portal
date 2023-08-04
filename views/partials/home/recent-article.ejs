@@ -7,10 +7,22 @@
   include('../../components/atom/recent-article-card', { article}) %> <% }); %>
 
   <div class="mb-8">
-    <button>Prev</button>
-    <select name="pages" id="">
+    <button
+      class="border | border-blue-500 | h-9 | w-20 rounded-md | text-blue-500"
+    >
+      Prev
+    </button>
+    <select
+      class="border | border-blue-500 | rounded-md | w-16 | h-9 | px-2 | mx-2"
+      name="pages"
+      id=""
+    >
       <option value="1">1</option>
     </select>
-    <button>Next</button>
+    <button
+      class="border | border-blue-500 | h-9 | w-20 rounded-md | text-blue-500"
+    >
+      Next
+    </button>
   </div>
 </section>
