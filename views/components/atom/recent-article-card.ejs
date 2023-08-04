@@ -1,0 +1,38 @@
+<article
+  class="mx-5 | mb-5 | p-5 | border | border-l-blue-500 | border-l-4 | rounded-md | shadow | md:grid | grid-cols-2 | gap-10"
+>
+  <!--Image Container-->
+  <div class="mb-3 | md:bg-cover">
+    <img class="mx-auto" src="<%= article.image%>" alt="article-image" />
+  </div>
+  <!--End of Image Container-->
+
+  <!--Card Description-->
+  <div class="max-w-md | md:flex | md:flex-col | justify-between">
+    <h2 class="text-blue-500 | font-bold | mb-3 | md:text-lg">
+      <%= article.headline %>
+    </h2>
+    <p class="mb-5"><%= article.description %></p>
+    <div class="flex | flex-col | items-center | md:grid | grid-cols-2 | gap-5">
+      <!-- Article Author -->
+      <div class="mb-3">
+        <img
+          class="inline"
+          src="assets/images/icons/heart-icon.svg"
+          alt="heart-icon"
+        />
+
+        <span class="text-blue-500"
+          ><%= article.date %> <%= article.author %></span
+        >
+      </div>
+      <!-- End of Article Author -->
+      <button
+        class="py-2 | px-4 | mb-3 | bg-blue-500 | border | rounded-md | text-white"
+      >
+        Read More
+      </button>
+    </div>
+  </div>
+  <!-- End of Card Description-->
+</article>
