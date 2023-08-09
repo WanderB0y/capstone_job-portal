@@ -1,4 +1,5 @@
 const express = require("express");
+const milestoneInformation = require("./public/assets/js/milestone-data");
 const app = express();
 
 // set  the view engine to ejs, and using 
@@ -19,7 +20,14 @@ app.get('/', function(req, rest){
 // About Page
 
 app.get('/about', function(req, res){
-  res.render('pages/about')
+
+
+
+res.render('pages/about', {
+
+  /* Milestone Data */
+    milestoneInformation: milestoneInformation
+  });
 });
 // Trabaho Page
 

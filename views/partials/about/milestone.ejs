@@ -1,37 +1,17 @@
 <div class="bg-blue">
-    <div
-      class="container mx-auto p-2 sm:p-3 md:p-4 lg:pt-[84px] lg:pb-[30px] flex justify-center font-inter">
+    <div class="container mx-auto p-2 sm:p-3 md:p-4 lg:pt-[84px] lg:pb-[30px] flex justify-center font-inter">
       <h1 class="text-white text-[32px] text-center justify-center font-bold">
         Our best results this year
       </h1>
     </div>
+
+    
     <div class="container mx-auto p-2 xl:px-[219px] lg:pb-[87px] flex justify-center gap-4">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[47px]">
-        <div class="flex flex-col text-left font-inter text-white">
-          <h1 class="text-[36px] font-bold pb-[20px]">40%</h1>
-          <p class="text-[16px] leading-[22px]">
-            Learn To Love Growth And Change And You Will Be A Success
-          </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[47px]">
+        
+            <% milestoneInformation.forEach(function(milestoneInformation) { %> <%- 
+            include('../../components/information-cards/milestone-content.ejs', {milestoneInformation}) %> <%  }); %>
+        
         </div>
-  
-        <div class="flex flex-col text-left font-inter text-white">
-          <h1 class="text-[36px] font-bold pb-[20px]">20%</h1>
-          <p class="text-[16px] leading-[22px]">
-            A Discount Toner Cartridge Is Better Than Ever And You Will Save 50 Or More
-          </p>
-        </div>
-        <div class="flex flex-col text-left font-inter text-white">
-          <h1 class="text-[36px] font-bold pb-[20px]">3x</h1>
-          <p class="text-[16px] leading-[22px]">
-            Converter Ipod Video Taking Portable Video Viewing To A Whole New Level
-          </p>
-        </div>
-        <div class="flex flex-col text-left font-inter text-white">
-          <h1 class="text-[36px] font-bold pb-[20px]">200+</h1>
-          <p class="text-[16px] leading-[22px]">
-            The Small Change That Creates Massive Results In Your Life
-          </p>
-        </div>
-      </div>
     </div>
   </div>
