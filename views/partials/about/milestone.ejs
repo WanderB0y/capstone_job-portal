@@ -1,13 +1,13 @@
 <div class="bg-blue">
-    <div class="container mx-auto p-2 sm:p-3 md:p-4 lg:pt-[84px] lg:pb-[30px] flex justify-center font-inter">
+    <div class="w-full | py-[5rem]">
       <h1 class="text-white text-[32px] text-center justify-center font-bold">
         Our best results this year
       </h1>
     </div>
 
     
-    <div class="container mx-auto p-2 xl:px-[219px] lg:pb-[87px] flex justify-center gap-4">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[47px]">
+    <div class="mx-auto | 2xl:px-[16rem] | xl:px-[12rem] | lg:px-[4rem] | md:px-[3rem] | px-[2rem]">
+        <div class="grid | grid-cols-1 | md:grid-cols-2 | lg:grid-cols-4 | gap-[47px]">
         
             <% milestoneInformation.forEach(function(milestoneInformation) { %> <%- 
             include('../../components/information-cards/milestone-content.ejs', {milestoneInformation}) %> <%  }); %>
