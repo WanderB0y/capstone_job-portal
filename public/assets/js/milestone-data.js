@@ -1,4 +1,4 @@
-let milestoneInformation = [
+let milestoneInormation = [
     {
         headline: "40%",
         description: "Marami-rami ang mga nag apply at nakakuha ng\
@@ -21,4 +21,4 @@ let milestoneInformation = [
     } 
 ]
 
-module.exports = milestoneInformation
+module.exports = milestoneInormation
