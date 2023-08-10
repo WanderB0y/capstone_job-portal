@@ -1,7 +1,11 @@
 const express = require("express");
+
+/* Data path import */
+
 const milestoneInformation = require("./public/assets/js/milestone-data");
 const testimonyInformation = require("./public/assets/js/testimony-data");
 const trustedInformation = require("./public/assets/js/trusted-data");
+const blogInformation = require("./public/assets/js/blog-data");
 const app = express();
 
 // set  the view engine to ejs, and using 
@@ -15,16 +19,17 @@ app.set("view engine", "ejs");
 // Setting home as a home page
 
 app.get('/', function(req, rest){
-  rest.render('pages/home');
+  rest.render('pages/home', {
+    /* Blog Data */ 
+
+    blogInformation: blogInformation
+  });
 });
 
 
 // About Page
 
 app.get('/about', function(req, res){
-
-
-
 res.render('pages/about', {
 
   /* Milestone Data */
@@ -34,7 +39,10 @@ res.render('pages/about', {
     testimonyInformation: testimonyInformation,
 
     /* Trusted Data */
-    trustedInformation: trustedInformation
+    trustedInformation: trustedInformation,
+
+    /* Blog Data */
+    blogInformation: blogInformation
   });
 });
 

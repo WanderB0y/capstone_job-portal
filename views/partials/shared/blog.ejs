@@ -1,0 +1,12 @@
+<div class="w-full | py-[5rem] | 2xl:px-[20rem] | xl:px-[9rem] | md:px-[4rem] | px-[2rem]">
+    <h2 class="lg:text-[40px] | text-[32px] | text-center | font-inter | font-bold" > See Our Latest <span class="text-red"> Blog </span></h2>
+    <div class="grid | lg:grid-cols-3 | xl:gap-[4rem] | lg:gap-[2rem] | gap-[3rem] | place-items-center | lg:mt-[4.5rem] | mt-[2rem]">
+
+        <% blogInformation.forEach(function(blogInformation) { %> <%-
+            include('../../components/information-cards/blog-content', {blogInformation}) %> <% }); %>
+
+    </div>
+</div>
+
+
+
