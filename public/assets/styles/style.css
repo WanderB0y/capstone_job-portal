@@ -749,6 +749,9 @@ video {
 .h-full{
   height: 100%;
 }
+.h-\[175px\]{
+  height: 175px;
+}
 .w-\[120px\]{
   width: 120px;
 }
@@ -794,6 +797,9 @@ video {
 }
 .w-\[250px\]{
   width: 250px;
+}
+.w-\[324px\]{
+  width: 324px;
 }
 .min-w-\[300px\]{
   min-width: 300px;
@@ -900,6 +906,9 @@ video {
 .gap-\[30px\]{
   gap: 30px;
 }
+.gap-\[4px\]{
+  gap: 4px;
+}
 .space-y-4 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
@@ -941,6 +950,10 @@ video {
 .border-blue-500{
   --tw-border-opacity: 1;
   border-color: rgb(45 49 123 / var(--tw-border-opacity));
+}
+.border-gray-300{
+  --tw-border-opacity: 1;
+  border-color: rgb(209 213 219 / var(--tw-border-opacity));
 }
 .border-l-blue-500{
   --tw-border-opacity: 1;
@@ -994,6 +1007,18 @@ video {
 .p-\[9px\]{
   padding: 9px;
 }
+.p-\[1rem\]{
+  padding: 1rem;
+}
+.p-\[1\.5rem\]{
+  padding: 1.5rem;
+}
+.p-\[2rem\]{
+  padding: 2rem;
+}
+.p-\[1\.875rem\]{
+  padding: 1.875rem;
+}
 .px-2{
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -1045,6 +1070,18 @@ video {
 .py-\[9px\]{
   padding-top: 9px;
   padding-bottom: 9px;
+}
+.px-\[4px\]{
+  padding-left: 4px;
+  padding-right: 4px;
+}
+.px-\[7px\]{
+  padding-left: 7px;
+  padding-right: 7px;
+}
+.px-\[12px\]{
+  padding-left: 12px;
+  padding-right: 12px;
 }
 .pb-8{
   padding-bottom: 2rem;
@@ -1223,6 +1260,10 @@ video {
 }
 .drop-shadow-sm{
   --tw-drop-shadow: drop-shadow(0 1px 1px rgb(0 0 0 / 0.05));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+.drop-shadow-md{
+  --tw-drop-shadow: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 .transition-all{
@@ -1771,8 +1812,16 @@ video {
     display: block;
   }
 
+  .lg\:inline-block{
+    display: inline-block;
+  }
+
   .lg\:flex{
     display: flex;
+  }
+
+  .lg\:grid{
+    display: grid;
   }
 
   .lg\:h-\[2330px\]{
@@ -1817,6 +1866,10 @@ video {
 
   .lg\:flex-nowrap{
     flex-wrap: nowrap;
+  }
+
+  .lg\:place-items-stretch{
+    place-items: stretch;
   }
 
   .lg\:items-start{

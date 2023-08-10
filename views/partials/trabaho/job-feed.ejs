@@ -1,5 +1,5 @@
-<div class="w-full | bg-green-200 | 2xl:px-[15rem]">
-    <div class="flex | gap-[30px]">
+<div class="w-full | bg-green-200 | 2xl:px-[15rem] | px-[2rem] | py-[4rem]">
+    <div class="grid | place-items-center | lg:place-items-stretch | gap-[30px] lg:flex | h-full">
         <!-- Left Section -->
         <div class="bg-red-200 | flex | flex-col | gap-[2rem] | justify-center">
             <p class="font-inter | font-normal | text-[16px] | self-center">Sort by : <strong>relevance </strong> &verbar; <strong>1-30</strong> of 251 jobs</p>
@@ -11,31 +11,26 @@
 
             <div class="flex | justify-between">
                 <button class="primary-button">Prev</button>
-                <button> 1 <img src="#"></button>
+                <button class="primary-button | flex | gap-[10px] | items-center | px-[12px]"> 1 <img src="/assets/images/listing-icons/arrow-down.svg"></button>
                 <button class="primary-button">Next</button>
             </div>
-
-           
-
         </div>
 
         <!-- Right Section -->
-        <div class="bg-yellow-100 | w-full">
-            asd
+        <div class="bg-yellow-100 | w-full | hidden | lg:grid | drop-shadow-sm | border-gray-300 | border-[1px] | rounded-[6px] | p-[1.875rem]">
+            <div class="w-[324px] | h-[175px] bg-gray-400">
+                <img>
+            </div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
 
     </div>
 </div>
-    <!-- left section -->
-    <div class="left | border| mr-5">
-      <div class="flex | mx-5 | mb-5">
-      </div>
-      <div>
-        <% jobInformation.forEach(function(jobInformation) { %> <%- 
-          include('../../components/card-listing/job-feed-card', {jobInformation}) %> <% }); %>
-      </div>
-    
-     </div>
 
     <!-- right part -->
     <div
