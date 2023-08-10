@@ -1,4 +1,5 @@
 const express = require("express");
+const app = express();
 
 /* Data path import */
 
@@ -8,7 +9,8 @@ const trustedInformation = require("./public/assets/js/trusted-data");
 const blogInformation = require("./public/assets/js/blog-data");
 const popularInformation = require("./public/assets/js/popular-listing-data");
 const newInformation = require("./public/assets/js/new-listing-data");
-const app = express();
+const jobInformation = require("./public/assets/js/job-data");
+
 
 // set  the view engine to ejs, and using 
 // express.static to run all of the files within the directory of public 
@@ -58,19 +60,34 @@ res.render('pages/about', {
 // Trabaho Page
 
 app.get('/trabaho', function(req, res){
-  res.render('pages/trabaho')
+  res.render('pages/trabaho', {
+        /* Blog Data */ 
+        blogInformation: blogInformation,
+
+        /* Job Data */
+
+        jobInformation: jobInformation
+  })
+
+  
 });
 
 // Blog Page
 
 app.get('/blog', function(req, res){
-  res.render('pages/blog')
+  res.render('pages/blog', {
+
+  })
 });
 
 // Employer Page
 
 app.get('/employer', function(req, res){
-  res.render('pages/employer')
+  res.render('pages/employer', {
+
+      /* Blog Data */ 
+      blogInformation: blogInformation
+  })
 });
 
 // Server port

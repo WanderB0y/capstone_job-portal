@@ -1,7 +1,7 @@
-<div class="w-full | flex | flex-col | justify-center | items-center | gap-[3rem] | py-[3rem] | px-[1rem]">
+<div class="w-full | flex | flex-col | justify-center | items-center | gap-[3rem] | py-[4rem] | px-[1rem] ">
 
-    <h2 class="lg:text-[40px] | text-[32px] | text-center | font-inter | font-bold" > Mga Patok Na<span class="text-red"> Trabaho </span></h2>
-    <div class="grid | place-items-center | xl:grid-cols-4 | sm:grid-cols-2 | grid-cols-1 | xl:gap-[3rem] | lg:gap-[3rem] | gap-[1rem]">
+    <h2 class="lg:text-[40px] | text-[32px] | text-center | font-inter | font-bold" > Mga Patok Na<span class="text-blue-500"> Trabaho </span></h2>
+    <div class="grid | place-items-center | xl:grid-cols-4 | sm:grid-cols-2 | grid-cols-1 | xl:gap-[3rem] | lg:gap-[3rem] | gap-[2rem]">
         <% popularInformation.forEach(function(popularInformation) { %> <%-
             include('../../components/card-listing/popular-card', {popularInformation}) %> <% }); %>
     </div>
