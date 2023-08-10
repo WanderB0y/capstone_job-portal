@@ -1,30 +1,10 @@
-<div class="border | rounded-md | border-l-4 | border-l-blue-500 | drop-shadow-sm | p-5 | max-w-[235px]">
-    <div>
-        <div>
-            <img src="#">
-            <div>
-                <h4>Name of Position</h4>
-                <h4>Recruiter Name</h4>
-                <h4>Location</h4>
-            </div>
-        </div>
-    
-        <div>
-            <div>
-                <button>PHP 250 per day</button>
-                <button>Free Food</button>
-            </div>
-            <div>
-                <img src="#">
-                <p>Actively Recruiting</p>
-            </div> 
-            <div class="flex | gap-[10px]">
-                <%- include('../../components/button/button-save.ejs'); %>
-                <%- include('../../components/button/button-web.ejs'); %>
-                <%- include('../../components/button/button-katulad.ejs'); %>
-            </div>
-            <%- include('../../components/button/button-impormasyon.ejs'); %>
-        </div>
+<div class="w-full | flex | flex-col | justify-center | items-center | gap-[3rem] | py-[3rem] | px-[1rem]">
 
+    <h2 class="lg:text-[40px] | text-[32px] | text-center | font-inter | font-bold" > Mga Patok Na<span class="text-red"> Trabaho </span></h2>
+    <div class="grid | place-items-center | xl:grid-cols-4 | sm:grid-cols-2 | grid-cols-1 | xl:gap-[3rem] | lg:gap-[3rem] | gap-[1rem]">
+        <% popularInformation.forEach(function(popularInformation) { %> <%-
+            include('../../components/card-listing/popular-card', {popularInformation}) %> <% }); %>
     </div>
+
+    <button class="secondary-button | w-fit">Tumingin ng Higit pa </button>
 </div>
