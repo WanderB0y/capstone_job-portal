@@ -1,5 +1,7 @@
 const express = require("express");
 const milestoneInformation = require("./public/assets/js/milestone-data");
+const testimonyInformation = require("./public/assets/js/testimony-data");
+const trustedInformation = require("./public/assets/js/trusted-data");
 const app = express();
 
 // set  the view engine to ejs, and using 
@@ -26,7 +28,13 @@ app.get('/about', function(req, res){
 res.render('pages/about', {
 
   /* Milestone Data */
-    milestoneInformation: milestoneInformation
+    milestoneInformation: milestoneInformation,
+
+    /* Testimony Data */
+    testimonyInformation: testimonyInformation,
+
+    /* Trusted Data */
+    trustedInformation: trustedInformation
   });
 });
 

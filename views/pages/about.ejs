@@ -28,16 +28,22 @@
             <%- include('../partials/about/milestone.ejs', {milestoneInformation}); %>
         </section>
 
+        <!-- Testimony Description -->
+
+        <section>
+            <%- include('../partials/about/testimony-description'); %>
+        </section>
+
         <!-- Trusted Company Section -->
 
         <section>
-            <%- include('../partials/about/trusted.ejs'); %>
+            <%- include('../partials/about/trusted.ejs', {trustedInformation}); %>
         </section>
 
         <!-- Testimony Section -->
 
         <section>
-            <%- include('../partials/about/testimony.ejs'); %>
+            <%- include('../partials/about/testimony.ejs', {testimonyInformation}); %>
         </section>
 
         <!-- Career Section -->
