@@ -801,6 +801,9 @@ video {
 .max-w-\[300px\]{
   max-width: 300px;
 }
+.max-w-\[235px\]{
+  max-width: 235px;
+}
 .transform{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
@@ -976,6 +979,10 @@ video {
 .bg-green-100{
   --tw-bg-opacity: 1;
   background-color: rgb(220 252 231 / var(--tw-bg-opacity));
+}
+.bg-blue-100{
+  --tw-bg-opacity: 1;
+  background-color: rgb(124 128 207 / var(--tw-bg-opacity));
 }
 .p-1{
   padding: 0.25rem;
