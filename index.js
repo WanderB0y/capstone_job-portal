@@ -7,6 +7,7 @@ const testimonyInformation = require("./public/assets/js/testimony-data");
 const trustedInformation = require("./public/assets/js/trusted-data");
 const blogInformation = require("./public/assets/js/blog-data");
 const popularInformation = require("./public/assets/js/popular-listing-data");
+const newInformation = require("./public/assets/js/new-listing-data");
 const app = express();
 
 // set  the view engine to ejs, and using 
@@ -24,6 +25,9 @@ app.get('/', function(req, rest){
 
     /* Popular Information */
     popularInformation: popularInformation,
+
+    /* New Information */
+    newInformation: newInformation,
 
     /* Blog Data */ 
     blogInformation: blogInformation

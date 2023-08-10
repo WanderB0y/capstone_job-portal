@@ -1,0 +1,32 @@
+<div class="border | rounded-md | border-l-4 | border-l-blue-500 | drop-shadow-sm | p-5 | w-fit">
+    <div class="grid | gap-[2rem] | sm:grid-cols-1 | grid-cols-2">
+        <div>
+            <div class="w-[151px] | h-[101px] | bg-gray-400">
+                <img src="<%= newInformation.image %>">
+            </div>
+           
+            <div class="mt-[1rem] [&>*]:leading-5 | [&>*]:font-inter">
+                <h4 class="text-[18px] | font-extrabold | text-[#2D317B;]"> <%= newInformation.position %> </h4>
+                <h4 class="text-[14px] | font-normal | text-[#1A0DB3]"> <%= newInformation.recruiter %> </h4>
+                <h4 class="text-[14px] | font-normal | text-black"> <%= newInformation.location %> </h4>
+            </div>
+        </div>
+    
+        <div class="flex | flex-col | sm:gap-[8px] | gap-[12px]">
+            <div class="[&>*]:small-secondary-button">
+                <button> <%= newInformation.salary %> </button>
+                <button> <%= newInformation.perks %> </button>
+            </div>
+            <div class="flex | gap-[6px] | items-center">
+                <img src="/assets/images/listing-icons/recruit.svg">
+                <p class="text-green | text-[12px] | font-semibold | font-inter">Actively Recruiting</p>
+            </div> 
+            <div class="flex | sm:gap-[10px] | gap-[6px]">
+                <%- include('../../components/button/button-save.ejs'); %>
+                <%- include('../../components/button/button-web.ejs'); %>
+                <%- include('../../components/button/button-katulad.ejs'); %>
+            </div>
+            <%- include('../../components/button/button-impormasyon.ejs'); %>
+        </div>
+    </div>
+</div>
