@@ -1,0 +1,14 @@
+<div class="font-inter | w-full | grid | place-content-center | px-[2rem] | gap-8">
+    <h1 class="text-blue-500 | text-2xl |  text-center | font-bold | p-2 | my-5 | md:text-4xl">
+        Recently Posted Article
+    </h1>
+    <div class="flex | flex-col | gap-8">
+          <% articleInformation.forEach(function(articleInformation) { %> <%-
+              include('../../components/information-cards/primary-article-content', { articleInformation }) %> <% }); %>
+    </div>
+    <div class="flex | place-self-center | gap-6">
+        <button class="primary-button">Prev</button>
+        <button class="primary-button | flex | gap-[10px] | items-center | px-[12px]"> 1 <img src="/assets/images/listing-icons/arrow-down.svg"></button>
+        <button class="primary-button">Next</button>
+    </div>
+</div>

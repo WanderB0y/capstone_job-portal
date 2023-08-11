@@ -1,0 +1,21 @@
+<div class="p-6 | border | border-l-blue-500 | border-l-4 | rounded-md | shadow | gap-10 | lg:grid-cols-2  | grid-cols-1 | grid | lg:max-w-[940px] | max-w-[390px] | hover:scale-105 | transition-all" >
+  	<!--Image Container-->
+	<div class="lg:w-[410px] | w-[340px] | h-[236px] | bg-gray-300 | place-self-center">
+    	<img class="mx-auto" src="<%= articleInformation.image%>"/>
+  	</div>
+  	<!--End of Image Container-->
+
+	<!--Card Description-->
+  	<div class="font-inter">
+		<h2 class="text-blue-500 | font-bold | md:text-[24px] | mt-3 | text-[18px]"> <%= articleInformation.headline %> </h2>
+    	<p class="my-3 | md:text-[16px] | text-[14px]"> <%= articleInformation.description %></p>
+	    <div class="flex | items-center | flex-wrap | gap-4">
+			<div class="flex | gap-3">
+				<img src="/assets/images/listing-icons/heart.svg"/>
+        		<span class="text-blue-500 | md:text-[16px] | text-[14px]"> <%= articleInformation.date %>&nbsp;by&nbsp;<%= articleInformation.author %></span>
+			</div>
+			<button class="secondary-button | lg:w-fit | w-full">Read More</button>
+		</div>
+  	</div>
+  <!-- End of Card Description-->
+</div>

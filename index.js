@@ -10,6 +10,7 @@ const blogInformation = require("./public/assets/js/blog-data");
 const popularInformation = require("./public/assets/js/popular-listing-data");
 const newInformation = require("./public/assets/js/new-listing-data");
 const jobInformation = require("./public/assets/js/job-data");
+const articleInformation = require("./public/assets/js/article-data");
 
 
 // set  the view engine to ejs, and using 
@@ -65,7 +66,6 @@ app.get('/trabaho', function(req, res){
         blogInformation: blogInformation,
 
         /* Job Data */
-
         jobInformation: jobInformation
   })
 
@@ -76,7 +76,10 @@ app.get('/trabaho', function(req, res){
 
 app.get('/blog', function(req, res){
   res.render('pages/blog', {
+    /* Article data */
 
+    articleInformation: articleInformation
+    
   })
 });
 

@@ -9,9 +9,27 @@
     </header>
 
     <main>
+        <!-- Main Description Section  -->
+
         <section>
-            
+            <%- include('../partials/blog/blog-main-description.ejs'); %>
         </section>
+
+        <!-- Search Section -->
+
+        <section>
+            <%- include('../partials/blog/blog-filter-search.ejs'); %>
+        </section>
+        
+
+        <!-- Recent Article Section -->
+
+        <section> 
+            <%- include('../partials/blog/recent-article.ejs', {articleInformation}); %> 
+        </section>
+
+        <!-- Newsletter Section -->
+
         <section> 
             <%- include('../partials/shared/newsletter.ejs'); %> 
         </section>
