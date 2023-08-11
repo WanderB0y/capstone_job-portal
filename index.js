@@ -92,7 +92,10 @@ app.get('/employer', function(req, res){
   res.render('pages/employer', {
 
       /* Blog Data */ 
-      blogInformation: blogInformation
+      blogInformation: blogInformation,
+
+      /* Trusted Data */
+    trustedInformation: trustedInformation,
   })
 });
 
