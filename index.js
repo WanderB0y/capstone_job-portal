@@ -11,6 +11,7 @@ const popularInformation = require("./public/assets/js/popular-listing-data");
 const newInformation = require("./public/assets/js/new-listing-data");
 const jobInformation = require("./public/assets/js/job-data");
 const articleInformation = require("./public/assets/js/article-data");
+const poparticleInformation = require("./public/assets/js/popular-article-data");
 
 
 // set  the view engine to ejs, and using 
@@ -68,8 +69,6 @@ app.get('/trabaho', function(req, res){
         /* Job Data */
         jobInformation: jobInformation
   })
-
-  
 });
 
 // Blog Page
@@ -78,7 +77,11 @@ app.get('/blog', function(req, res){
   res.render('pages/blog', {
     /* Article data */
 
-    articleInformation: articleInformation
+    articleInformation: articleInformation,
+
+    /* Popular Article Information */
+
+    poparticleInformation: poparticleInformation
     
   })
 });

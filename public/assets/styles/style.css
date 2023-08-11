@@ -1265,6 +1265,14 @@ video {
   padding-left: 20rem;
   padding-right: 20rem;
 }
+.py-\[7rem\]{
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+.py-\[10rem\]{
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
 .pb-8{
   padding-bottom: 2rem;
 }
@@ -1344,6 +1352,9 @@ video {
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
+}
+.text-\[30px\]{
+  font-size: 30px;
 }
 .font-bold{
   font-weight: 700;

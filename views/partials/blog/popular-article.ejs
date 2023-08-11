@@ -1,7 +1,8 @@
-<div class="w-full | flex | flex-col | justify-center | items-center | gap-[3rem] | py-[4rem] | px-[1rem] ">
-    <h2 class="lg:text-[40px] | text-[32px] | text-center | font-inter | font-bold" > Mga Patok NA Article <span class="text-blue-500"> Trabaho </span></h2>
+<div class="w-full | flex | flex-col | justify-center | items-center | gap-[3rem] | py-[6rem]">
+    <h2 class="lg:text-[40px] | md:text-[32px] | text-[30px] | text-center | font-inter | font-bold" > Mga Patok Na <span class="text-blue-500"> Article </span> </h2>
     <div class="grid | place-items-center | xl:grid-cols-4 | sm:grid-cols-2 | grid-cols-1 | xl:gap-[3rem] | lg:gap-[3rem] | gap-[2rem]">
-
+        <% poparticleInformation.forEach(function(poparticleInformation) { %> <%- 
+            include('../../components/information-cards/popular-article-content', {poparticleInformation }) %> <% }); %>
     </div>
     <a href="/trabaho">
         <button class="secondary-button | w-fit">Tumingin ng Higit pa </button>
