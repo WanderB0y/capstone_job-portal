@@ -1,0 +1,8 @@
+<div class="w-full | 2xl:px-[12rem] | xl:px-[9rem] | md:px-[5rem] | px-[2rem] | xl:py-[7rem] | py-[5rem] | font-inter | flex | flex-col | gap-6">
+    <h2 class="text-blue-500 | text-lg | font-medium | text-center" > Benefits sa pagpili sa amin </h2>
+    <p class="text-2xl | font-bold | text-center | md:text-3xl | self-center"> Bakit kami ay pinipili ng nakakarami?</p>
+    <div class="grid | grid-cols-1 | xl:grid-cols-4 | gap-6 | sm:grid-cols-2 | mt-[3rem]">
+        <% whyInformation.forEach(function(whyInformation) { %> <%-
+            include ('../../components/information-cards/why-content', {whyInformation}) %> <% }); %>
+    </div>
+</div>

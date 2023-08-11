@@ -12,6 +12,7 @@ const newInformation = require("./public/assets/js/new-listing-data");
 const jobInformation = require("./public/assets/js/job-data");
 const articleInformation = require("./public/assets/js/article-data");
 const poparticleInformation = require("./public/assets/js/popular-article-data");
+const whyInformation = require("./public/assets/js/why-data");
 
 
 // set  the view engine to ejs, and using 
@@ -94,8 +95,14 @@ app.get('/employer', function(req, res){
       /* Blog Data */ 
       blogInformation: blogInformation,
 
+      
       /* Trusted Data */
+      
     trustedInformation: trustedInformation,
+
+    /* Why Data */
+
+    whyInformation: whyInformation
   })
 });
 
