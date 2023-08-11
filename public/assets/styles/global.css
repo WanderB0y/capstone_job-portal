@@ -19,6 +19,10 @@
     @apply bg-blue-500 text-white px-[27px] py-[8px] text-[16px] font-inter font-medium border-[1px] border-solid border-blue-500 rounded-md shrink-0 hover:opacity-90 transition-all;
   }
   
+  .filter-secondary-button{
+    @apply flex items-center gap-[7px] font-inter bg-blue-500 text-white text-[14px] leading-4 px-[16px] py-[6px] rounded-[6px] hover:opacity-90
+  }
+
   .small-primary-button{
     @apply py-[3px] px-[8px] bg-[#bfe8ff]  rounded-[4px]  text-[#0070AF]  font-inter  font-medium  text-[12px] hover:bg-[#0070AF] hover:text-white transition-all;
   }
