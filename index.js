@@ -41,7 +41,6 @@ app.get('/', function(req, rest){
   });
 });
 
-
 // About Page
 
 app.get('/about', function(req, res){
@@ -63,6 +62,8 @@ res.render('pages/about', {
 });
 
 
+
+
 // Trabaho Page
 
 app.get('/trabaho', function(req, res){
@@ -75,6 +76,9 @@ app.get('/trabaho', function(req, res){
         jobInformation: jobInformation
   })
 });
+
+
+
 
 // Blog Page
 
@@ -89,6 +93,8 @@ app.get('/blog', function(req, res){
     
   })
 });
+
+
 
 // Employer Page
 
@@ -108,6 +114,12 @@ app.get('/employer', function(req, res){
     emptestimonyInformation: emptestimonyInformation
   })
 });
+
+ // Log In Page 
+
+ app.get('/login', function(rec, res){
+  res.render('pages/login')
+ })
 
 // Server port
 
