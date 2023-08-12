@@ -1,0 +1,8 @@
+<div class="w-full | flex | flex-col | justify-center | gap-[3rem] | py-[7rem] | 2xl:px-[20rem] | xl:px-[12rem] | lg:[8rem] | px-[2rem]">
+
+    <h2 class="text-2xl | font-bold | text-center | md:text-3xl | self-center | text-blue-500 ">Nirerecomenda ng mga recruiters ang aming serbisyo</h2>
+    <div class="grid | gap-6 | grid-cols-2 | lg:grid-cols-4 | place-items-center">
+        <% emptestimonyInformation.forEach (function(emptestimonyInformation) { %> <%-
+            include('../../components/information-cards/employer-testimony-content', {emptestimonyInformation}) %> <% }); %> 
+    </div>
+</div>

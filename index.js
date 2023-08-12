@@ -13,6 +13,7 @@ const jobInformation = require("./public/assets/js/job-data");
 const articleInformation = require("./public/assets/js/article-data");
 const poparticleInformation = require("./public/assets/js/popular-article-data");
 const whyInformation = require("./public/assets/js/why-data");
+const emptestimonyInformation = require("./public/assets/js/employer-testimony-data");
 
 
 // set  the view engine to ejs, and using 
@@ -36,6 +37,7 @@ app.get('/', function(req, rest){
 
     /* Blog Data */ 
     blogInformation: blogInformation
+    
   });
 });
 
@@ -56,6 +58,7 @@ res.render('pages/about', {
 
     /* Blog Data */
     blogInformation: blogInformation
+
   });
 });
 
@@ -64,6 +67,7 @@ res.render('pages/about', {
 
 app.get('/trabaho', function(req, res){
   res.render('pages/trabaho', {
+
         /* Blog Data */ 
         blogInformation: blogInformation,
 
@@ -76,12 +80,11 @@ app.get('/trabaho', function(req, res){
 
 app.get('/blog', function(req, res){
   res.render('pages/blog', {
-    /* Article data */
 
+    /* Article data */
     articleInformation: articleInformation,
 
     /* Popular Article Information */
-
     poparticleInformation: poparticleInformation
     
   })
@@ -95,14 +98,14 @@ app.get('/employer', function(req, res){
       /* Blog Data */ 
       blogInformation: blogInformation,
 
-      
       /* Trusted Data */
-      
     trustedInformation: trustedInformation,
 
     /* Why Data */
+    whyInformation: whyInformation,
 
-    whyInformation: whyInformation
+    /* Employer Testimony Data */
+    emptestimonyInformation: emptestimonyInformation
   })
 });
 
