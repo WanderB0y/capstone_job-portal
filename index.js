@@ -121,6 +121,10 @@ app.get('/employer', function(req, res){
   res.render('pages/login')
  })
 
+
+ app.get('/register', function(rec, res){
+  res.render('pages/register')
+ }) 
 // Server port
 
 app.listen(3000);
