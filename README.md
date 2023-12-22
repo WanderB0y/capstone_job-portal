@@ -4,6 +4,9 @@
 
 **Hanap** is a capstone project that aims to address the needs of blue-collar workers and employers by providing a dynamic and user-friendly job portal. The term "Hanap" is derived from the Filipino word for "search," encapsulating the essence of the platform – connecting job seekers and employers seamlessly.
 
+## Live Link:
+https://capstone-job-portal.onrender.com/
+
 ## Technologies Used
 
 - **Javascript:** The primary language used in building this website.
