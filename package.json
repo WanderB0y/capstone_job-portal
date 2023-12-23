@@ -4,8 +4,7 @@
   "description": "Capstone Project",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index",
+    "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "devcss": "postcss public/assets/styles/global.css -o public/assets/styles/style.css -w"
   },

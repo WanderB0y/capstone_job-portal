@@ -16,18 +16,15 @@ const whyInformation = require("./public/assets/js/why-data");
 const emptestimonyInformation = require("./public/assets/js/employer-testimony-data");
 
 
-// set  the view engine to ejs, and using 
-// express.static to run all of the files within the directory of public 
-// with this tailwind won't work
+// Middleware
 
 app.use(express.static("public"));
 app.set("view engine", "ejs");
 
-
 // Setting home as a home page
 
-app.get('/', function(req, rest){
-  rest.render('pages/home', {
+app.get('/', function(req, res){
+  res.render('pages/home', {
 
     /* Popular Information */
     popularInformation: popularInformation,
