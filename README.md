@@ -58,10 +58,10 @@ https://capstone-job-portal.onrender.com/
 
 To run the project locally, follow these steps:
 
-1. Clone the repository: `git clone [<repository_url>](https://github.com/johncarlolipa/capstone_job-portal)`
-2. Install dependencies: `npm install`
+1. Clone the repository: `git clone [<repository_url>](https://github.com/WanderB0y/capstone_job-portal.git)`
+2. Install dependencies: `npm i`
 3. Open the project in your preferred code editor.
-4. Run the application locally: `npm run dev`
+4. Run the application locally: `npm run start`
 
 
 ## Feedback
